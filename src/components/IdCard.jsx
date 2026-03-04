@@ -11,6 +11,7 @@ const IdCard = ({image, name, role, idNumber, department}) => {
             <p className="text-gray-600 text-center">{role}</p>
             <p className="text-gray-600 text-center">{idNumber}</p>
             <p className="text-gray-600 text-center">{department}</p>
+            <button className="mt-4 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">View Profile</button>
         </div>
         
         </>

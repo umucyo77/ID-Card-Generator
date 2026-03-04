@@ -2,9 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Header from './Header'
+
 import React from 'react'
 import IdCard from './components/IdCard'
+import image from './assets/esther.png'
 
 function CardList() {
   const [count, setCount] = useState(0)
@@ -39,11 +40,27 @@ function CardList() {
   ]
 
   return (
-    <>
-    <IdCard />
+    
+    
+   
+     
+<div className="min-h-screen bg-sky-900 w-full flex items-center justify-between">
+ <div className="text-5xl text-white">CARD LIST </div>
+  {people.map((person) => (
+    
+  ))}
+      
+
+    </div>
+       
 
      
-    </>
+
+
+    
+
+     
+   
   )
 }
 
