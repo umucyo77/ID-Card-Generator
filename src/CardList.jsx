@@ -6,7 +6,8 @@ import './App.css'
 import React from 'react'
 import IdCard from './components/IdCard'
 import image from './assets/esther.png'
-
+import image1 from './assets/neza.jpg'
+import image2 from './assets/tito.jpeg'
 function CardList() {
   const [count, setCount] = useState(0)
 
@@ -21,7 +22,7 @@ function CardList() {
 
     {
       id: 2,
-      name:"Alice Johnson",
+      name:"Neza Emmanuel",
       role:"Frontend Developer",
       department:"Engineering",
       image:"./assets/alice.png"
@@ -45,7 +46,7 @@ function CardList() {
    
      
 <div className="min-h-screen bg-sky-900 w-full flex items-center justify-between">
- <div className="text-5xl text-white">CARD LIST </div>
+ <div className="text-3xl text-white ">CARD LIST </div>
   {people.map((person) => (
     <IdCard key={person.id}
     name={person.name}
