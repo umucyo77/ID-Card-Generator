@@ -47,7 +47,11 @@ function CardList() {
 <div className="min-h-screen bg-sky-900 w-full flex items-center justify-between">
  <div className="text-5xl text-white">CARD LIST </div>
   {people.map((person) => (
-    
+    <IdCard key={person.id}
+    name={person.name}
+    role={person.role}
+    department={person.department}
+    image={person.image} />
   ))}
       
 
