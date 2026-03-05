@@ -17,7 +17,7 @@ function CardList() {
       name:"Umucyo Esther",
       role:"Software Engineer",
       department:"Engineering",
-      image:"./assets/esther.png"
+      imageUrl: image
     },
 
     {
@@ -25,7 +25,7 @@ function CardList() {
       name:"Neza Emmanuel",
       role:"Frontend Developer",
       department:"Engineering",
-      image:"./assets/alice.png"
+      imageUrl:image1
 
     },
 
@@ -34,7 +34,8 @@ function CardList() {
       name:"Igiraneza Tito",
       role:"Full Stack Developer",
       department:"Engineering",
-      image:"./assets/tito.png"
+      imageUrl:image2
+      
     }
 
 
@@ -43,16 +44,24 @@ function CardList() {
   return (
     
     
-   
+   <>
      
-<div className="min-h-screen bg-sky-900 w-full flex items-center justify-between">
- <div className="text-3xl text-white ">CARD LIST </div>
+<div className="min-h-screen bg-sky-900 w-full flex items-center justify-between p-20"> 
+ 
+ 
   {people.map((person) => (
+    
     <IdCard key={person.id}
+    
     name={person.name}
     role={person.role}
+    image={person.imageUrl}
     department={person.department}
-    image={person.image} />
+    
+    />
+    
+   
+    
   ))}
       
 
@@ -62,7 +71,7 @@ function CardList() {
      
 
 
-    
+    </>
 
      
    
