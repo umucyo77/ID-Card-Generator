@@ -46,7 +46,7 @@ function CardList() {
     
    <>
      
-<div className="min-h-screen bg-sky-900 w-full flex items-center justify-between p-20"> 
+<div className="min-h-screen bg-sky-900 w-full flex flex-col md:flex-row items-center justify-center md:justify-between p-4 md:p-8 lg:p-20 gap-4 md:gap-0"> 
  
  
   {people.map((person) => (
